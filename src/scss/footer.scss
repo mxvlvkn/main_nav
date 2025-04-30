@@ -1,0 +1,34 @@
+.footer {
+    background-color: #D9DBDC;
+    height: 300px;
+
+    & > .content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+
+    &__logo {
+    }
+
+    &__info {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__city {
+        margin-bottom: 8px;
+    }
+
+    &__year {
+    }
+}
