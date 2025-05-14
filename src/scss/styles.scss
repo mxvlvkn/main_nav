@@ -2,6 +2,11 @@
 @use "./header.scss";
 @use "./card.scss";
 @use "./footer.scss";
+@use "./main_slider.scss";
+@use "./img_slider.scss";
+@use "./full-img.scss";
+@use "./full-img_slider.scss";
+@use "./contacts.scss";
 
 @font-face {
     font-family: 'PFRegalFinessePro'; 
@@ -43,6 +48,7 @@ main {
     // background-size: 200px 200px;
     // background-image: url('./images/test_back.jpeg');
     // padding-top: 15px;
+    min-height: 600px;
 }
 
 .title-font {
@@ -60,3 +66,26 @@ main {
     }
 }
 
+.grad-back {
+    padding-bottom: 100px;
+    margin-bottom: -50px;
+
+    --project-gradient-1: #ffc100; 
+    --project-gradient-2: #ffefbb;
+    background: linear-gradient(91.15deg, var(--project-gradient-1) 0%, var(--project-gradient-2) 73.96%), #eee;
+}
+
+.transparent-back {
+    background-color: #ffffff00;
+}
+
+.big-padd {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}
+@media (max-width: 1370px) {
+    .big-padd {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
